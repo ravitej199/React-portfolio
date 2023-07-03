@@ -23,22 +23,24 @@ export default function Project(){
     <h1 className="text-5xl text-center pt-10 font-semibold italic">My Projects</h1>
 
 <div>
-    <div className="p-24 flex justify-around">
-        <div className="40vw relative top-0">
+
+    <div className=" h-[100vh] p-10  flex justify-around">
+        <div className="h-[50vh] relative top-0 ">
             <Image src={Memory1} width={600} height={100} alt="game"/>
             <Image src={Memory2} width={600} height={100} alt="game"/>
         </div>
-        <div className=" text-center w-[40vw] ">
+        <div className="h-[50vh] sticky top-[15vw] text-center w-[40vw] ">
             <p className="text-2xl text-center p-10 font-semibold">Memory Game</p>
-            <p className="text-xl text-gray-500 text-left p-10 font-medium">
+            <p className=" text-xl text-gray-500 text-left p-10 font-medium">
                 This Is Challenging Game Containing 4x4 Boxes That Highlights A Red Color 
                 In Each Random Box For Certain Seconds When User Click All Colored Boxes The 
                 Color Of Box Will Be Red And After Picking All Colored Boxes User Will Be Win 
                 The Game This Project is Done By using Html , Css and Javascript</p>
         </div>
     </div>
-    <div className="p-24 flex justify-around">
-        <div className=" text-center w-[40vw]">
+
+    <div className="h-[100vh] p-10 flex justify-around">
+        <div className="h-[50vh] sticky top-[15vw]  text-center w-[40vw]">
             <p className="text-2xl text-center p-10 font-semibold">Web Scraping</p>
             <p className="text-xl text-gray-500 text-left p-10 font-medium">
                 This Is Web scraping website used to obtain large amounts of 
@@ -48,17 +50,18 @@ export default function Project(){
                   data you want so that the web scraper only extracts that data quickly.     
                   This Project is Done By using Python, Jinja template , Beautiful Soup , and Jquery</p>
         </div>
-        <div className="40vw">
+        <div className="h-[50vh] ">
             <Image src={scraping1} width={600} height={100} alt="game"/>
             <Image src={scraping2} width={600} height={100} alt="game"/>
         </div>
     </div>
-    <div className="p-24 flex justify-around">
-        <div className="40vw relative top-0">
+
+    <div className="h-[100vh] p-10 flex justify-around">
+        <div className="h-[50vh]  relative top-0">
             <Image src={pet1} width={600} height={100} alt="game"/>
             <Image src={pet2} width={600} height={100} alt="game"/>
         </div>
-        <div className=" text-center w-[40vw] ">
+        <div className="h-[50vh] sticky top-[15vw] text-center w-[40vw] ">
             <p className="text-2xl text-center p-10 font-semibold">Pet Super care</p>
             <p className="text-xl text-gray-500 text-left p-10 font-medium">
                 This Is is a super website for pets with a pet Clinic Appointment system ,
@@ -67,19 +70,21 @@ export default function Project(){
                 This Project is Done By using Html , Css and Javascript, NodeJs, MongoDB</p>
         </div>
     </div>
-    <div className="p-24 flex justify-around">
-        <div className=" text-center w-[40vw]">
+
+    <div className="h-[100vh] p-10  flex justify-around">
+        <div className="h-[50vh] sticky top-[15vw] text-center w-[40vw]">
             <p className="text-2xl text-center p-10 font-semibold">Drag and Drop Game</p>
             <p className="text-xl text-gray-500 text-left p-10 font-medium">
                 This Is Game in which the player has to use their imagination to put together creative shapes and 
                 come up with a design this project is in my github , Based on your creativity the sky is the limit 
                 The Game This Project is Done By using Html , Css and Javascript</p>
         </div>
-        <div className="40vw">
+        <div className="h-[50vh] ">
             <Image src={dng2} width={600} height={100} alt="game"/>
             <Image src={dng1} width={600} height={100} alt="game"/>
         </div>
     </div>
+
 </div>
     </>)
 }
