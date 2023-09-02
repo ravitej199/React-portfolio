@@ -20,18 +20,18 @@ export default function Project(){
         <Link href='/about' className='font-semibold text-2xl hover:text-blue-700 hover:border-b-4 hover:border-blue-700'>About</Link>
       </div>
     </div>
-    <h1 className="text-5xl text-center pt-10 font-semibold italic">My Projects</h1>
+    <h1 className="text-5xl pt-10 font-semibold italic">My Projects</h1>
 
 <div>
 
-    <div className=" h-[100vh] p-10  flex justify-around">
-        <div className="h-[50vh] relative top-0 ">
+    <p className="text-2xl p-10 font-semibold">Memory Game</p>
+    <div className="  p-10 max-md:!block flex justify-around">
+        <div className=" min-w-[50vw]">
             <Image src={Memory1} width={600} height={100} alt="game"/>
-            <Image src={Memory2} width={600} height={100} alt="game"/>
+            {/* <Image src={Memory2} width={600} height={100} alt="game"/> */}
         </div>
-        <div className="h-[50vh] sticky top-[15vw] text-center w-[40vw] ">
-            <p className="text-2xl text-center p-10 font-semibold">Memory Game</p>
-            <p className=" text-xl text-gray-500 text-left p-10 font-medium">
+        <div className="">
+            <p className=" text-xl text-gray-500 text-justify font-medium">
                 This Is Challenging Game Containing 4x4 Boxes That Highlights A Red Color 
                 In Each Random Box For Certain Seconds When User Click All Colored Boxes The 
                 Color Of Box Will Be Red And After Picking All Colored Boxes User Will Be Win 
@@ -39,10 +39,10 @@ export default function Project(){
         </div>
     </div>
 
-    <div className="h-[100vh] p-10 flex justify-around">
-        <div className="h-[50vh] sticky top-[15vw]  text-center w-[40vw]">
-            <p className="text-2xl text-center p-10 font-semibold">Web Scraping</p>
-            <p className="text-xl text-gray-500 text-left p-10 font-medium">
+    <p className="text-2xl p-10 font-semibold">Web Scraping</p>
+    <div className=" px-10 max-md:!block flex justify-around">
+        <div className="">
+            <p className="text-xl text-gray-500 text-left text-justify font-medium">
                 This Is Web scraping website used to obtain large amounts of 
                 data from websites. Most of this data is unstructured data in an HTML 
                 format. Web Scrapers can extract all the data on particular sites or the
@@ -50,20 +50,20 @@ export default function Project(){
                   data you want so that the web scraper only extracts that data quickly.     
                   This Project is Done By using Python, Jinja template , Beautiful Soup , and Jquery</p>
         </div>
-        <div className="h-[50vh] ">
-            <Image src={scraping1} width={600} height={100} alt="game"/>
-            <Image src={scraping2} width={600} height={100} alt="game"/>
+        <div className="min-w-[50vw]">
+            {/* <Image src={scraping1} width={600} height={100} alt="game" className="float-right"/> */}
+            <Image src={scraping2} width={600} height={100} alt="game" className="float-right"/>
         </div>
     </div>
 
-    <div className="h-[100vh] p-10 flex justify-around">
-        <div className="h-[50vh]  relative top-0">
+    <p className="text-2xl p-10 text-center font-semibold">Pet Super care</p>
+    <div className=" px-10 max-md:!block flex justify-around">
+        <div className="min-w-[50vw]">
             <Image src={pet1} width={600} height={100} alt="game"/>
-            <Image src={pet2} width={600} height={100} alt="game"/>
+            {/* <Image src={pet2} width={600} height={100} alt="game"/> */}
         </div>
-        <div className="h-[50vh] sticky top-[15vw] text-center w-[40vw] ">
-            <p className="text-2xl text-center p-10 font-semibold">Pet Super care</p>
-            <p className="text-xl text-gray-500 text-left p-10 font-medium">
+        <div className="">
+            <p className="text-xl text-gray-500 text-justify font-medium">
                 This Is is a super website for pets with a pet Clinic Appointment system ,
                 which is able to store legacy data for multiple client pet owners with multiple pet 
                 and also capable of scheduling appointments from both doctor and client side.
@@ -71,17 +71,17 @@ export default function Project(){
         </div>
     </div>
 
-    <div className="h-[100vh] p-10  flex justify-around">
-        <div className="h-[50vh] sticky top-[15vw] text-center w-[40vw]">
-            <p className="text-2xl text-center p-10 font-semibold">Drag and Drop Game</p>
-            <p className="text-xl text-gray-500 text-left p-10 font-medium">
+    <p className="text-2xl p-10 font-semibold">Drag and Drop Game</p>
+    <div className=" px-10 max-md:!block  flex justify-around">
+        <div className="">
+            <p className="text-xl text-gray-500 text-justify font-medium">
                 This Is Game in which the player has to use their imagination to put together creative shapes and 
                 come up with a design this project is in my github , Based on your creativity the sky is the limit 
                 The Game This Project is Done By using Html , Css and Javascript</p>
         </div>
-        <div className="h-[50vh] ">
-            <Image src={dng2} width={600} height={100} alt="game"/>
-            <Image src={dng1} width={600} height={100} alt="game"/>
+        <div className="min-w-[50vw]">
+            {/* <Image src={dng2} width={600} height={100} alt="game" className="float-right"/> */}
+            <Image src={dng1} width={600} height={100} alt="game" className="float-right"/>
         </div>
     </div>
 
