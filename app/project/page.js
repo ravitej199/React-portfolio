@@ -30,8 +30,8 @@ export default function Project(){
             <Image src={Memory1} width={600} height={100} alt="game"/>
             {/* <Image src={Memory2} width={600} height={100} alt="game"/> */}
         </div>
-        <div className="">
-            <p className=" text-xl text-gray-500 text-justify font-medium">
+        <div className="flex items-center">
+            <p className="hover:text-black hover:bg-white/40 hover:-translate-y-2 hover:shadow-xl backdrop-blur-sm bg-white/30 p-5 rounded-xl text-xl text-gray-800 text-justify font-medium">
                 This Is Challenging Game Containing 4x4 Boxes That Highlights A Red Color 
                 In Each Random Box For Certain Seconds When User Click All Colored Boxes The 
                 Color Of Box Will Be Red And After Picking All Colored Boxes User Will Be Win 
@@ -41,8 +41,8 @@ export default function Project(){
 
     <p className="text-2xl p-10 font-semibold">Web Scraping</p>
     <div className=" px-10 max-md:!block flex justify-around">
-        <div className="">
-            <p className="text-xl text-gray-500 text-left text-justify font-medium">
+        <div className="flex items-center">
+            <p className="hover:text-black hover:bg-white/40 hover:-translate-y-2 hover:shadow-xl backdrop-blur-sm bg-white/30 p-5 rounded-xl text-xl text-gray-800 text-left text-justify font-medium">
                 This Is Web scraping website used to obtain large amounts of 
                 data from websites. Most of this data is unstructured data in an HTML 
                 format. Web Scrapers can extract all the data on particular sites or the
@@ -56,14 +56,14 @@ export default function Project(){
         </div>
     </div>
 
-    <p className="text-2xl p-10 text-center font-semibold">Pet Super care</p>
+    <p className="text-2xl p-10  font-semibold">Pet Super care</p>
     <div className=" px-10 max-md:!block flex justify-around">
         <div className="min-w-[50vw]">
             <Image src={pet1} width={600} height={100} alt="game"/>
             {/* <Image src={pet2} width={600} height={100} alt="game"/> */}
         </div>
-        <div className="">
-            <p className="text-xl text-gray-500 text-justify font-medium">
+        <div className="flex items-center">
+            <p className="hover:text-black hover:bg-white/40 hover:-translate-y-2 hover:shadow-xl backdrop-blur-sm bg-white/30 p-5 rounded-xl text-xl text-gray-800 text-justify font-medium">
                 This Is is a super website for pets with a pet Clinic Appointment system ,
                 which is able to store legacy data for multiple client pet owners with multiple pet 
                 and also capable of scheduling appointments from both doctor and client side.
@@ -73,8 +73,8 @@ export default function Project(){
 
     <p className="text-2xl p-10 font-semibold">Drag and Drop Game</p>
     <div className=" px-10 max-md:!block  flex justify-around">
-        <div className="">
-            <p className="text-xl text-gray-500 text-justify font-medium">
+        <div className="flex items-center">
+            <p className="hover:text-black hover:bg-white/40 hover:-translate-y-2 hover:shadow-xl backdrop-blur-sm bg-white/30 p-5 rounded-xl text-xl text-gray-800 text-justify font-medium">
                 This Is Game in which the player has to use their imagination to put together creative shapes and 
                 come up with a design this project is in my github , Based on your creativity the sky is the limit 
                 The Game This Project is Done By using Html , Css and Javascript</p>

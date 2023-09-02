@@ -27,11 +27,11 @@ const skills = [{option:"HTML",background:'bg-red-700'},{ option:"CSS",backgroun
     </div>
     <div className="max-md:!block flex justify-around">
         <Image src={Profile} width={400} height={100} alt='profile' className=" object-contain"/>
-        <div className="max-md:!border-transparent max-md:w-[95vw] text-3xl p-10 w-[40vw] text-justify border-2 rounded-[20px] transition duration-700 hover:border-black">
+        <div className="hover:bg-white/40 group backdrop-blur-sm bg-white/30 max-md:!border-transparent max-md:w-[95vw] text-3xl p-10 w-[40vw] text-justify border-2 rounded-[20px] transition duration-400 hover:border-black">
             <h1 className="text-5xl pt-10 font-semibold italic">{pageTitle}</h1>
             <h2 className="py-10">HI THERE !</h2>
             <h3 className="py-10">My name is <em className="italic">{identity.firstName}.</em></h3>
-            <h3 className="text-xl font-mormal text-gray-800">I am passionate about using technology to solve complex  problems  and  
+            <h3 className="group-hover:text-black text-xl font-mormal text-gray-800">I am passionate about using technology to solve complex  problems  and  
                 create  innovative  solutions. I am proficient in languages such as JavaScript 
                 and have experience working with various frameworks such as ReactJS , NodeJS and 
                 python frameworks such as Flask I am a creative problem solver with excellent
