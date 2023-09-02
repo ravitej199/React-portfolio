@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <> 
-    <main className="flex min-h-screen flex-col items-center justify-between p-10">
+    <main className=" flex min-h-screen flex-col items-center justify-between p-10">
 
       <div className="flex h-14 gap-24 p-10 items-center ">
         <Link href='/about' className='font-semibold text-2xl hover:text-blue-700 hover:border-b-4 hover:border-blue-700 '>About</Link>
