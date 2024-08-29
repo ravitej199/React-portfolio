@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Profile from '../public/IMG_20230701_152513-removebg-preview.png'
 
+
 import Link from 'next/link'
 export default function Home() {
   return (

@@ -16,7 +16,7 @@ const identity = {
   hobbies: ["photography", "Gaming", "coding"],
   
 };
-const skills = [{option:"HTML",background:'bg-red-700'},{ option:"CSS",background:'bg-blue-700'}, {option:"JavaScript",background:'bg-green-700'},{option:"ReactJS",background:'bg-purple-700'},{option:"NextJS",background:'bg-yellow-700'},{ option:"Python",background:'bg-pink-700'},{option:"Flask",background:'bg-indigo-700'}];
+const skills = [{option:"HTML",background:'bg-red-700'},{ option:"CSS",background:'bg-blue-700'}, {option:"JavaScript",background:'bg-green-700'},{option:"ReactJS",background:'bg-purple-700'},{option:"NextJS",background:'bg-yellow-700'},{ option:"Python",background:'bg-pink-700'},{option:"Flask",background:'bg-indigo-700'},{option:"GoLang",background:'bg-blue-500'},{option:"Linux",background:'bg-sky-500'},{option:"Git",background:'bg-orange-500'}];
 
     return(<>
     <div className="flex justify-center">
@@ -32,8 +32,8 @@ const skills = [{option:"HTML",background:'bg-red-700'},{ option:"CSS",backgroun
             <h2 className="py-10">HI THERE !</h2>
             <h3 className="py-10">My name is <em className="italic">{identity.firstName}.</em></h3>
             <h3 className="group-hover:text-black text-xl font-mormal text-gray-800">I am passionate about using technology to solve complex  problems  and  
-                create  innovative  solutions. I am proficient in languages such as JavaScript 
-                and have experience working with various frameworks such as ReactJS , NodeJS and 
+                create  innovative  solutions. I am proficient in languages such as JavaScript, python, GoLang 
+                and have experience working with various frameworks such as chi, ReactJS , NodeJS and 
                 python frameworks such as Flask I am a creative problem solver with excellent
                 analytical skills. I enjoy working collaboratively and thrive in team environments.
                 I am always eager to learn and stay up-to-date with the latest trends and advancements
