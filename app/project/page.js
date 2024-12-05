@@ -25,6 +25,11 @@ import mybio4 from '../../public/mybio4.png'
 
 
 export default function Project(){
+    const userAgent = navigator.userAgent.toLowerCase();
+    const iPhone = (userAgent.includes('iphone') || userAgent.includes('ipad') || userAgent.includes('ipod'))
+    const android = userAgent.includes('android')
+    const bioBackupApp = iPhone ? "https://apps.apple.com/in/app/mybiobackup/id6459410069" : android ? "https://play.google.com/store/apps/details?id=project.sathwik.mybiobackup&pcampaignid=web_share" : "https://mybiobackup.com/"
+
     return(<>
     <div className="flex justify-center">
         <div className="flex h-14 justify-center gap-24 p-20 items-center w-[50vw]">
@@ -73,8 +78,8 @@ export default function Project(){
         </div>
     </div>
 
-    <p className="text-2xl p-10 font-semibold"><a className="underline">Asset Management</a></p>
-    <div className="  p-10 max-md:!block flex justify-around">
+    <p className="text-2xl p-10 font-semibold"><a className="underline hover:text-blue-700" href="https://samarthmeditech.com">Asset Management</a></p>
+    <div className="p-10 max-md:!block flex justify-around">
         <div className=" min-w-[50vw]">
             <Image src={asset} width={600} height={100} alt="game" className="rounded-[10px]"/>
             {/* <Image src={Memory2} width={600} height={100} alt="game"/> */}
@@ -98,7 +103,9 @@ export default function Project(){
     <p className="text-2xl p-10 font-semibold">
         <a className="underline hover:text-blue-700" 
         // href="https://play.google.com/store/apps/details?id=project.sathwik.mybiobackup&pcampaignid=web_share"
-        href="https://apps.apple.com/in/app/mybiobackup/id6459410069"
+        // href="https://mybiobackup.com/"
+        // href="https://apps.apple.com/in/app/mybiobackup/id6459410069"
+        href ={bioBackupApp}
         target="_blank"
         >
         My Biobackup
@@ -147,9 +154,9 @@ export default function Project(){
                 This Is Web scraping website used to obtain large amounts of 
                 data from websites. Most of this data is unstructured data in an HTML 
                 format. Web Scrapers can extract all the data on particular sites or the
-                 specific data that a user wants. Ideally, it’s best if you specify the
-                  data you want so that the web scraper only extracts that data quickly.     
-                  This Project is Done By using Python, Jinja template , Beautiful Soup , and Jquery</p>
+                specific data that a user wants. Ideally, it’s best if you specify the
+                data you want so that the web scraper only extracts that data quickly.     
+                This Project is Done By using Python, Jinja template , Beautiful Soup , and Jquery</p>
         </div>
         <div className="min-w-[50vw]">
             {/* <Image src={scraping1} width={600} height={100} alt="game" className="float-right"/> */}
