@@ -5,11 +5,12 @@ export default function List({data,index}){
         < >
             <div style={{flexDirection: index%2 == 0 ? "row" : "row-reverse"}} className="py-5 max-md:!flex-col flex justify-around">
                 
-                <div className="sm:w-[45vw] max-sm:w-[80vw] overflow-auto flex gap-2 justify-center">
-
-                {data.images.map((image, index, arr)=>
-                        <Image key={index} src={image} width={arr.length == 1 ? 600 : 200} height={"auto"} alt="game"  className="object-contain rounded-[10px]"/>
-                )}
+                <div className="sm:w-[45vw] max-sm:w-[80vw] overflow-auto">
+                    <div className={data.images.length == 1 ? "" :"w-max flex gap-2 justify-center"}>
+                    {data.images.map((image, index, arr)=>
+                            <Image key={index} src={image} width={arr.length == 1 ? 600 : 200} height={"auto"} alt="game"  className="rounded-[10px]"/>
+                    )}
+                    </div>
                 </div>
 
 
