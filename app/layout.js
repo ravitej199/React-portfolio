@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
+import Footer from './components/footer'
 
 export const metadata = {
   title: 'Rakesh Mirji - Portfolio',
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className+" bg-[url('../public/landingpage4.svg')] bg-center bg-cover bg-no-repeat"}>
         {children}
+        <Footer/>
       </body>
     </html>
   )

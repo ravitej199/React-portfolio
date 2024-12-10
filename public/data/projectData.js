@@ -1,22 +1,22 @@
-import Memory1 from '../../public/memory1.png'
-import Memory2 from '../../public/memory2.png'
-import scraping1 from '../../public/webscraping1.png'
-import scraping2 from '../../public/webscraping2.png'
-import pet1 from '../../public/pet2.png'
-import pet2 from '../../public/pet1.png'
-import dng1 from '../../public/dng2.png'
-import dng2 from '../../public/dng1.png'
-import shg from '../../public/shg.png'
-import ayuci1 from '../../public/ayuci1.png'
-import ayuci2 from '../../public/ayuci2.png'
-import smart from '../../public/smart1.png'
-import asset from '../../public/asset.png'
-import mybio1 from '../../public/mybio1.png'
-import mybio2 from '../../public/mybio2.png'
-import mybio3 from '../../public/mybio3.png'
-import mybio4 from '../../public/mybio4.png'
+import Memory1 from '../memory1.png'
+import Memory2 from '../memory2.png'
+import scraping1 from '../webscraping1.png'
+import scraping2 from '../webscraping2.png'
+import pet1 from '../pet2.png'
+import pet2 from '../pet1.png'
+import dng1 from '../dng2.png'
+import dng2 from '../dng1.png'
+import shg from '../shg.png'
+import ayuci1 from '../ayuci1.png'
+import ayuci2 from '../ayuci2.png'
+import smart from '../smart1.png'
+import asset from '../asset.png'
+import mybio1 from '../mybio1.png'
+import mybio2 from '../mybio2.png'
+import mybio3 from '../mybio3.png'
+import mybio4 from '../mybio4.png'
 
-export const ProjectList=[
+export const ProjectList = [
     {
         link:"https://www.ayuci.com/",
         name:"AYUCI",
@@ -126,3 +126,37 @@ export const HobbyList = [
         The Game This Project is Done By using Html , Css and Javascript`
     },
 ]
+
+
+export const videoSrc = "https://www.w3schools.com/html/mov_bbb.mp4"
+export const audioSrc = "https://cdn.pixabay.com/audio/2024/02/09/audio_94f8f95b25.mp3"
+export const timeData = '09:00AM'
+ 
+export const audioComp = {
+    name:"Audio Component",
+    content:`The Audio Player component is used to embed sound content in a NextJs. 
+    It allows browsers to play audio files such as MP3, Ogg, and WAV 
+    directly without the need for third-party plugins.`,
+    attributes : {
+        controls : "Adds built-in controls like play, pause, and volume.",
+        muted : "Mutes the audio by default.",
+        src : "Specifies the audio file's URL.",
+        timeLine: "shows audio current time and duration",
+    },
+}
+export const videoComp = {
+    name:"Video Component",
+    content:`The video Player element in HTML is used to embed video content in a web page. It provides a standard way to display video files, allowing users to watch video without the need for third-party plugins.`,
+    attributes : {
+        controls : "Displays built-in controls like play, pause and volume.",
+        muted : "Mutes the audio of the video by default.",
+        src : "Specifies the video file's URL.",
+        timeLine: "shows video current time and duration",
+    },
+}
+
+export const pickerComp = {
+    name:"Time Picker Component",
+    content:`A time picker is an interface element that allows users to select a specific time, typically in hours and minutes, from a dropdown or popup. It is useful in forms where users need to input a time (such as appointment scheduling or setting alarms).`,
+}
+

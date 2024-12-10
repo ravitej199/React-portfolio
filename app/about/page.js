@@ -10,7 +10,7 @@ export default function About(){
     const pageTitle = "About Me";
 
 const identity = {
-  firstName: "Rakesh",
+  firstName: "Rakesh Mirji",
   country: "India",
   occupation: "Software Developer",
   hobbies: ["photography", "Gaming", "coding"], 
@@ -29,13 +29,13 @@ const skills = [{option:"HTML",background:'bg-red-700'},{ option:"CSS",backgroun
     <div className="flex justify-center">
     <Navigator page={"/about"}/>
     </div>
-    <div className="max-md:!block flex justify-around">
+    <div className="max-md:!block flex items-center justify-around">
         <Image src={Profile} width={400} height={100} alt='profile' className=" object-contain"/>
         <div className="hover:bg-black/30 group backdrop-blur-sm bg-black/20 max-md:!border-transparent max-md:w-[95vw] text-3xl p-10 w-[40vw] text-justify border-2 rounded-[20px] transition duration-400 hover:border-black/30">
-            <h1 className="text-5xl pt-10 font-semibold italic">{pageTitle}</h1>
-            <h2 className="py-10">HI THERE !</h2>
-            <h3 className="py-10">My name is <em className="italic">{identity.firstName}.</em></h3>
-            <h3 className=" text-xl font-mormal text-slate-100">{identity.about}</h3>
+            {/* <h1 className="text-5xl font-semibold italic">{pageTitle}</h1> */}
+            <h2 className="pt-2">Hello, This is</h2>
+            <h3 className="pb-5"> <em className="">{identity.firstName}.</em></h3>
+            <h3 className=" text-xl font-mormal text-slate-200">{identity.about}</h3>
         </div>
     </div>
     <div className="p-10 text-xl font-medium max-md:!block flex gap-10 items-center">
