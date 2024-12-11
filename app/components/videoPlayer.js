@@ -88,15 +88,15 @@ export default function VideoPlayer({ src }) {
         <>
         <div className='relative'>
             <video src={src} className='relative w-full h-auto'  ref={videoRef} onClick={() => play ? action("pause") : action("start")}>video</video>
-            {src && <div className="max-md:!block flex justify-center max-md:w-full w-full absolute max-md:-bottom-10 bottom-10">
-                <div className="max-md:w-[85vw] flex bg-blue-800 gap-2 h-16 p-4 self-center w-[70vw] rounded-lg items-center text-white opacity-10 max-md:scale-[0.6] scale-1 max-md:opacity-70 hover:opacity-70 transition delay-[500ms] hover:delay-0 duration-500">
+            {src && <div className="flex flex-col justify-center items-center max-md:w-full w-full bottom-10">
+                <div className="max-md:w-[130vw] flex bg-blue-800 gap-2 h-16 p-4 self-center w-full rounded-lg items-center text-white max-md:scale-[0.6] scale-1 transition duration-500 opacity-50 max-md:opacity-100 hover:opacity-100">
                     <Image src={sound < 1 || videoRef?.current?.muted ? Mute : Sound} alt={'Sound'} width={30} onClick={() => { videoRef.current.muted = !videoRef.current.muted }} />
-                    {videoRef.current && !videoRef.current.muted && <input className='min-w-0 accent-white opacity-60 hover:opacity-70' type="range" value={sound} onChange={(e) => action("volume", e.target.value)} />}
+                    {videoRef.current && !videoRef.current.muted && <input className='min-w-0 accent-white opacity-60 hover:opacity-100' type="range" value={sound} onChange={(e) => action("volume", e.target.value)} />}
                     <Image src={Rewind} alt={'rewind'} width={20} onClick={() => action("rewind")} />
                     <Image src={play ? Pause : Play} alt={'play / pause'} onClick={() => play ? action("pause") : action("start")} />
                     <Image src={Forward} alt={'forward'} width={20} onClick={() => action("forward")} />
                     {videoRef.current && time(videoRef.current.currentTime)}
-                    <input className='max-md:w-full w-screen max-md:w-full accent-white opacity-60 hover:opacity-70 ' type="range" value={progress} onChange={(e) =>action("move", e.target.value)} />
+                    <input className='max-md:w-full w-screen max-md:w-full accent-white opacity-60 hover:opacity-100 ' type="range" value={progress} onChange={(e) =>action("move", e.target.value)} />
                     {videoRef.current && time(videoRef.current.duration)}
                     {/* <Image src={Max} alt={'screen'} width={30} onClick={() => videoRef.current.classList.toggle("object-cover")} /> */}
                     {/* <Image src={List} alt={'list'} width={30}  onClick={()=>{listRef.current.classList.toggle('!block');fetchAsset(collegeCode)}} /> */}

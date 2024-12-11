@@ -5,6 +5,8 @@ import VideoPlayer from "../components/videoPlayer.js";
 import AudioPlayer from "../components/audioPlayer.js";
 import TimePicker from "../components/timer.js";
 import { videoSrc, videoComp, audioSrc, audioComp, timeData, pickerComp } from "@/public/data/projectData.js";
+import Bar from "../../public/Bar.svg"
+import Image from "next/image.js";
 
 export default function CustomComponent(){
 
@@ -15,20 +17,27 @@ export default function CustomComponent(){
     <Navigator page={"/customComponents"}/>
     </div>
 
-    <div className="p-10">
-        <h1 className="text-4xl pt-10 font-semibold italic">Components</h1>
-        
-        <div className="">
+    <div className="p-10 overflow-x-hidden flex flex-col gap-14 ">
+        <div className="p-5 w-screen flex justify-between items-center ">
+            <div className="w-1/4 max-md:hidden"></div>
+            <h1 className="text-5xl pt-10 font-semibold">Custom Components</h1>
+            <Image src={Bar} className="max-md:hidden"/>
+        </div>        
+        <div className="lg:flex gap-10">
             <Detail data={audioComp}/>
-            <AudioPlayer src={audioSrc}/>
+            <div className="lg:max-w-[50vw] ">
+                <AudioPlayer src={audioSrc}/>
+            </div>
         </div>
-        <div className="">
+        <div className="lg:flex flex-row flex-row-reverse gap-10">
             <Detail data={videoComp}/>
-            <VideoPlayer src={videoSrc}/>
+            <div className="lg:max-w-[50vw]">
+                <VideoPlayer src={videoSrc}/>
+            </div>
         </div>
         <div className='flex flex-col items-center' >
             <Detail data={pickerComp}/>
-            <div className="bg-slate-100 flex justify-center items-center h-[10vh] w-[50vw] rounded-[10px]" >
+            <div className="hover:border-2 border-[#244f75] bg-[#1b2a36] flex justify-center items-center h-[10vh] w-[50vw] rounded-[10px]" >
                 <div className='w-[100px]' >
                     <TimePicker setState={setstate} state={state} />
                 </div>
@@ -40,18 +49,18 @@ export default function CustomComponent(){
 
 function Detail({data}){
     return(
-        <div className="">
-            <p className="text-2xl font-medium py-5">
+        <div className="text-justify font-medium md:text-xl">
+            <p className="text-2xl py-5 font-semibold">
                 {data.name}
             </p>
-            <p className="text-xl font-medium py-5">
+            <p className="">
                 {data.content}
             </p>
-            {data.attributes  && <p className="text-xl font-medium p-1">Attributes :</p>}
+            {data.attributes  && <p className="font-semibold text-slate-300">Attributes :</p>}
             {data.attributes  && Object.entries(data.attributes).map((elem, index)=>
                 <div key={index} className="md:pl-10 flex gap-2 p-2">
-                    <p className="h-min min-w-20 md:text-lg font-semibold text-slate-300 bg-slate-600 rounded-[5px] p-1">{`${elem[0]}:`}</p>
-                    <p className="md:text-lg font-medium p-1">{elem[1]}</p>
+                    <p className="p-2 h-min border-2 border-slate-600 rounded-[10px] text-slate-300 bg-slate-800">{`${elem[0]}:`}</p>
+                    <p className="p-2">{elem[1]}</p>
                 </div>
             ) 
             }

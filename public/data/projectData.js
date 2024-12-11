@@ -157,6 +157,34 @@ export const videoComp = {
 
 export const pickerComp = {
     name:"Time Picker Component",
-    content:`A time picker is an interface element that allows users to select a specific time, typically in hours and minutes, from a dropdown or popup. It is useful in forms where users need to input a time (such as appointment scheduling or setting alarms).`,
+    content:`A time picker is an interface element that allows users to select a specific time (by scrolling or moving eith touch screen), typically in hours and minutes, from a dropdown or popup. It is useful in forms where users need to input a time (such as appointment scheduling or setting alarms).`,
 }
 
+const tag1 = 'Programing Language'
+const tag2 = 'Tools/Frameworks/Library'
+const tag3 = 'Operating System'
+
+
+export const skills = [
+    {option:"JavaScript",tag:tag1},
+    {option:"Python",tag:tag1},
+    {option:"GoLang",tag:tag1},
+    {option:"SQL",tag:tag1},
+    {option:"HTML",tag:tag2},
+    {option:"CSS",tag:tag2}, 
+    {option:"Node.js",tag:tag2}, 
+    {option:"Express",tag:tag2}, 
+    {option:"p5.js",tag:tag2}, 
+    {option:"ReactJS",tag:tag2},
+    {option:"NextJS",tag:tag2},
+    {option:"Flask",tag:tag2},
+    {option:"Pandas",tag:tag2},
+    {option:"Chi",tag:tag2}, 
+    {option:"Git",tag:tag2},
+    {option:"Redis",tag:tag2}, 
+    {option:"MySQL",tag:tag2},
+    {option:"SQLAlchemy",tag:tag2},
+    {option:"SQLx",tag:tag2},
+    {option:"Windows",tag:tag3},
+    {option:"Linux",tag:tag3},
+];

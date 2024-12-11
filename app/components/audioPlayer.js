@@ -6,11 +6,11 @@ import Play from '../../public/images/play1.svg'
 import Pause from '../../public/images/pause.svg'
 import Rewind from '../../public/images/rewind.svg'
 import Forward from '../../public/images/forward.svg'
-
+import thumbnail from "../../public/thumb4.png"
 import { useRef, useState } from 'react'
 
 export default function AudioPlayer ({ src }) {
-    const thumbnail = "https://youtubethumbnaildownloaderonline.com/wp-content/uploads/2024/05/man-red-shadow-youtube-thumbnail.webp"
+    // const thumbnail = "https://youtubethumbnaildownloaderonline.com/wp-content/uploads/2024/05/man-red-shadow-youtube-thumbnail.webp"
     let audioRef = useRef(null)
     let intervalRef = useRef(null)
     const [state, setState] = useState({ progress: 0, sound: 100, play: false, size: '' })
@@ -90,8 +90,8 @@ export default function AudioPlayer ({ src }) {
         <div className='relative'>
             <audio src={src} className={' relative w-full h-screen ' + size} ref={audioRef} onClick={() => play ? action("pause") : action("start")} />
             {src && <div className="flex flex-col justify-center items-center max-md:w-full w-full max-md:-bottom-10 bottom-10">
-                <img src={thumbnail} className='w-[73%]'/>
-                <div className="max-md:w-[85vw] flex bg-blue-800 gap-2 h-16 p-4 self-center w-[70vw] rounded-lg items-center text-white opacity-100 max-md:scale-[0.6] scale-1 transition delay-[500ms] hover:delay-0 duration-500">
+                <Image src={thumbnail} className='w-[73%] object-cover'/>
+                <div className="max-md:w-[100vw] flex bg-blue-800 gap-2 h-16 p-4 self-center w-full rounded-lg items-center text-white opacity-100 max-md:scale-[0.6] scale-1 transition delay-[500ms] hover:delay-0 duration-500">
                     <Image src={Sound} alt={'Sound'} width={30} onClick={() => { audioRef.current.muted = !audioRef.current.muted }} />
                     {audioRef.current && !audioRef.current.muted && <input className='min-w-0 accent-white opacity-100' type="range" value={sound} onChange={(e) => action("volume", e.target.value)} />}
                     <Image src={Rewind} alt={'rewind'} width={20} onClick={() => action("rewind")} />
