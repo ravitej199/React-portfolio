@@ -39,7 +39,7 @@ export default function Scroll({bmi,setElem,state,elem,background,unit,metric,ma
                 <p className='absolute top-2 right-[30%] text-red-700 text-xl font-semibold'>|</p>
                 <p className='text-black absolute bottom-0 right-[25%] text-sm font-semibold py-4 '>{Math.round(precentage*maxCapacity/100)} {unit}</p>
                 <div style={{scrollbarWidth: 'none'}} ref={scrollContainerRef} onWheel={handleWheel} className="relative w-[60%]  overflow-x-auto overflow-y-hidden scroll-smooth scrollbar-hide z-[100] " onScroll={(e)=>updatePrecentage(e.target)}>
-                    <div className="flex gap-1 w-24 ml-[50%]" >
+                    <div className="flex gap-1 w-16 ml-[50%]" >
                         {meter.map((elem,index)=>
                         <p key={index} className='text-black'>
                             {elem}

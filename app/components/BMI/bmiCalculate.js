@@ -58,7 +58,7 @@ export default function Calculate({list, setList, setViewRecord}){
                     </div>
                 </div>
             </div>
-            <div className="flex gap-5">
+            <div className="flex gap-4">
                 <div className="w-[100%]">
                     <Scroll bmi={'track_name'} setElem={setState} state={state} elem={"height"} background={"bg-indigo-200"} unit={"cm"} metric={"Height"} maxCapacity={280}/>
                 </div>
