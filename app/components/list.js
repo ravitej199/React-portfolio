@@ -27,17 +27,17 @@ export default function List({data,index}){
                             }
                         </p>
                         {data.stack && 
-                        <div className="!select-none">
-                            <p className="font-semibold text-slate-300">Tech Stack</p>
+                        <div className="!select-none text-base">
+                            <p className=" font-semibold text-slate-300">Tech Stack</p>
                             <div className="flex flex-wrap gap-3 py-2">
                                 {data.stack.map((skill, index)=>
-                                    <p key={index} className="p-2 border-2 border-slate-600 rounded-[10px] text-slate-400 bg-slate-800">
+                                    <p key={index} className="text-sm p-2 border-2 border-slate-600 rounded-[10px] text-slate-400 bg-slate-800">
                                         {skill}
                                     </p>
                                 )}
                             </div>
                         </div>}
-                        <p>
+                        <p className="text-base">
                             {data.content}
                         </p>
                     </div>

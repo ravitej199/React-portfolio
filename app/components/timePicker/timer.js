@@ -22,7 +22,7 @@ export default function Timer({setState,state,timing,elem}){
     return(
         <>
         {edit ? 
-            <div className="select-none fixed flex items-end top-0 left-0 bg-black/60 h-screen">
+            <div className="z-[200] select-none fixed flex items-end top-0 left-0 bg-black/60 h-screen">
                 <div className=" bg-white grid grid-rows-3 rounded-t-3xl h-[20rem] w-screen p-5">
                     <div className="flex flex-col row-span-1">
                         <p className="font-medium text-lg self-end active:opacity-75" onClick={()=>setEdit(!edit)}>X</p>
@@ -47,7 +47,7 @@ export default function Timer({setState,state,timing,elem}){
                 </div>
             </div>
         :
-         <p className="cursor-pointer text-slate-800 font-medium bg-slate-200 text-sm border border-blue-500 rounded-lg p-2" onClick={()=>setEdit(!edit)} >{state}</p>}
+         <p className="text-center cursor-pointer text-slate-800 font-medium bg-slate-200 text-sm border border-blue-500 rounded-lg p-2" onClick={()=>setEdit(!edit)} >{state}</p>}
         </>
     )
 }

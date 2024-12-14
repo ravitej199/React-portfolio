@@ -6,7 +6,7 @@ import Play from '../../public/images/play1.svg'
 import Pause from '../../public/images/pause.svg'
 import Rewind from '../../public/images/rewind.svg'
 import Forward from '../../public/images/forward.svg'
-import thumbnail from "../../public/thumb4.png"
+import thumbnail from "../../public/thumb7.jpg"
 import { useRef, useState } from 'react'
 
 export default function AudioPlayer ({ src }) {

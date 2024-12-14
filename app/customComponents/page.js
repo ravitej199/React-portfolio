@@ -7,7 +7,7 @@ import TimePicker from "../components/timePicker/timer.js";
 import { videoSrc, videoComp, audioSrc, audioComp, timeData, pickerComp, bmiComp } from "@/public/data/projectData.js";
 import Bar from "../../public/Bar.svg"
 import Image from "next/image.js";
-import BMI from "../components/BMI/BMI.js";
+import BMI from "../components/BMI/display";
 
 export default function CustomComponent(){
 
@@ -21,7 +21,7 @@ export default function CustomComponent(){
     <div className="p-10 overflow-x-hidden flex flex-col gap-14 ">
         <div className="p-5 w-screen flex justify-between items-center ">
             <div className="w-1/4 max-md:hidden"></div>
-            <h1 className="text-5xl pt-10 font-semibold">Custom Components</h1>
+            <h1 className="text-4xl lg:text-5xl pt-10 font-semibold">Custom Components</h1>
             <Image src={Bar} alt="bar" className="max-md:hidden"/>
         </div>        
         <div className="lg:flex gap-10">
@@ -65,10 +65,10 @@ function Detail({data}){
             <p className="">
                 {data.content}
             </p>
-            {data.attributes  && <p className="font-semibold text-slate-300">Attributes :</p>}
+            {data.attributes  && <p className="pt-4 font-semibold text-slate-300">Attributes :</p>}
             {data.attributes  && Object.entries(data.attributes).map((elem, index)=>
-                <div key={index} className="md:pl-10 flex gap-2 p-2">
-                    <p className="p-2 h-min border-2 border-slate-600 rounded-[10px] text-slate-300 bg-slate-800">{`${elem[0]}:`}</p>
+                <div key={index} className="text-start md:pl-10 flex gap-2 p-2">
+                    <p className="text-sm p-2 h-min w-28 border-2 border-slate-600 rounded-[10px] text-slate-300 bg-slate-800">{`${elem[0]}:`}</p>
                     <p className="p-2">{elem[1]}</p>
                 </div>
             ) 

@@ -3,7 +3,7 @@
 import { useState } from "react"
 
 import Scroll from "./scroll"
-import BmiMeter from './bmiMeter'
+import BmiMeter from './meter'
 
 export default function Calculate({list, setList, setViewRecord}){
 
@@ -76,7 +76,7 @@ export default function Calculate({list, setList, setViewRecord}){
             </div>
             <div className=" flex flex-col">
                 <p className="text-black p-3 text-lg font-semibold">BMI Track Details</p>
-                <div className="p-3 bg-white rounded-2xl font-medium">
+                <div className="p-3 bg-white rounded-2xl font-medium text-sm">
                     <div className={`p-2 border-b flex justify-between ${track_name<=15.9 && "text-[#1B59F8]" }`}>
                         <p className={`${track_name<=15.9 ? "text-[#1B59F8]" : "text-slate-500" }`}>Very Severely Underweight</p>
                         <p> ≤ 15.9</p>

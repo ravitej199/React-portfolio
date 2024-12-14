@@ -1,6 +1,6 @@
 "use client"
 
-import BmiCalculate from './bmiCalculate'
+import BmiCalculate from './calculate'
 import Records from './records'
 import { useState } from 'react'
 
