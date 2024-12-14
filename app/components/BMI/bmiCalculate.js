@@ -67,7 +67,9 @@ export default function Calculate({list, setList, setViewRecord}){
                 </div>
             </div>
 
-            <button type="submit" className="mt-4 active:opacity-50 font-medium text-white text-center bg-blue-600 p-1 w-[40%] rounded-[50px]" onClick={()=>setViewRecord(true)}>View Records &gt; </button>
+            <p className="text-slate-500 py-2 text-xs"><span className="text-current font-semibold">Note :</span>Please adjust the height and weight by sliding the meter.</p>
+
+            <button type="submit" className="mt-4 active:opacity-50 font-medium text-white text-center bg-blue-600 p-1  lg:w-[40%] w-[50%] rounded-[50px]" onClick={()=>setViewRecord(true)}>View Records &gt; </button>
 
             <div className="mb-4 flex justify-center h-[160px]">
                 <BmiMeter bmi={track_name}/>
