@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import Clock from "../../public/images/timer.svg"
+import Clock from "../../../public/images/timer.svg"
 
 import Image from "next/image"
 import Picker from "./picker";

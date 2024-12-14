@@ -16,6 +16,7 @@ import mybio2 from '../mybio2.png'
 import mybio3 from '../mybio3.png'
 import mybio4 from '../mybio4.png'
 
+// Project Page
 export const ProjectList = [
     {
         link:"https://www.ayuci.com/",
@@ -127,7 +128,7 @@ export const HobbyList = [
     },
 ]
 
-
+// Component Page
 export const videoSrc = "https://www.w3schools.com/html/mov_bbb.mp4"
 export const audioSrc = "https://cdn.pixabay.com/audio/2024/02/09/audio_94f8f95b25.mp3"
 export const timeData = '09:00AM'
@@ -154,10 +155,20 @@ export const videoComp = {
         timeLine: "shows video current time and duration",
     },
 }
-
+export const bmiComp = {
+    name:"BMI Component",
+    content:`BMI (Body Mass Index) is a measure used to assess whether an individual has a healthy body weight for a given height. While BMI is a quick screening tool, it does not directly measure body fat or distribution. Other factors like muscle mass, bone density, and fat distribution can affect BMI's accuracy. It is a general guide but not a definitive measure of health.`,
+    attributes : {
+        controls : "slide height & weight section (Left - Right) to move the bmi meter.",
+    },
+}
 export const pickerComp = {
     name:"Time Picker Component",
     content:`A time picker is an interface element that allows users to select a specific time (by scrolling or moving eith touch screen), typically in hours and minutes, from a dropdown or popup. It is useful in forms where users need to input a time (such as appointment scheduling or setting alarms).`,
+    attributes : {
+        controls : "Click on the given time to interact with the time-picker component",
+        select : "just select the time you desire by scrolling the picker.",
+    }
 }
 
 const tag1 = 'Programing Language'
@@ -165,6 +176,7 @@ const tag2 = 'Tools/Frameworks/Library'
 const tag3 = 'Operating System'
 
 
+// About Page
 export const skills = [
     {option:"JavaScript",tag:tag1},
     {option:"Python",tag:tag1},

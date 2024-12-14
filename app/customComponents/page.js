@@ -3,10 +3,11 @@ import React, { useState } from "react";
 import Navigator from "../components/navigatior.js";
 import VideoPlayer from "../components/videoPlayer.js";
 import AudioPlayer from "../components/audioPlayer.js";
-import TimePicker from "../components/timer.js";
-import { videoSrc, videoComp, audioSrc, audioComp, timeData, pickerComp } from "@/public/data/projectData.js";
+import TimePicker from "../components/timePicker/timer.js";
+import { videoSrc, videoComp, audioSrc, audioComp, timeData, pickerComp, bmiComp } from "@/public/data/projectData.js";
 import Bar from "../../public/Bar.svg"
 import Image from "next/image.js";
+import BMI from "../components/BMI/BMI.js";
 
 export default function CustomComponent(){
 
@@ -21,7 +22,7 @@ export default function CustomComponent(){
         <div className="p-5 w-screen flex justify-between items-center ">
             <div className="w-1/4 max-md:hidden"></div>
             <h1 className="text-5xl pt-10 font-semibold">Custom Components</h1>
-            <Image src={Bar} className="max-md:hidden"/>
+            <Image src={Bar} alt="bar" className="max-md:hidden"/>
         </div>        
         <div className="lg:flex gap-10">
             <Detail data={audioComp}/>
@@ -41,6 +42,14 @@ export default function CustomComponent(){
                 <div className='w-[100px]' >
                     <TimePicker setState={setstate} state={state} />
                 </div>
+            </div>
+        </div>
+        <div className="p-2 lg:flex gap-10">
+            <div className="lg:w-[50vw]">
+                <Detail data={bmiComp}/>
+            </div>
+            <div className="-mx-8 lg:w-[50vw] ">
+                <BMI/>
             </div>
         </div>
     </div>
