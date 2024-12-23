@@ -2,7 +2,7 @@
 import React from "react";
 import Navigator from "../components/navigatior.js";
 import List from "../components/list.js";
-import {ProjectList,HobbyList} from "../../public/data/projectData"
+import {ProjectList} from "../../public/data/projectData"
 import Image from "next/image.js";
 import Bar from "../../public/Bar.svg"
 
