@@ -22,16 +22,6 @@ export default function Project(){
         {ProjectList.map((elem,index)=>
             <List key={index} data={elem} index={index} />
         )}
-
-        <div className=" w-screen p-5 flex justify-between items-center ">
-            <Image src={Bar} className="max-md:hidden"/>
-            <h1 className="text-5xl pt-10 font-semibold">My Other Projects</h1>
-            <div className="w-1/4 max-md:hidden"></div>
-        </div>
-        {HobbyList.map((elem,index)=>
-            <List key={index} data={elem} index={index} />
-        )}
-
     </div>
     </>)
 }
